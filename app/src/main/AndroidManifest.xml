@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="id.co.maminfaruq.sisteminformasi">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +13,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name" />
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -22,8 +24,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ProfileActivity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:name=".ui.profile.ProfileActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ui.info.InfoActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ui.program.ProgramActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ui.alumni.AlumniActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ui.gallery.GalleryActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ui.jurusan.JurusanActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ui.detail.detailGallery.DetailGallery"
+            android:parentActivityName=".ui.gallery.GalleryActivity"/>
+        <activity android:name=".ui.detail.detailProgram.DetailProgram"></activity>
     </application>
 
 </manifest>

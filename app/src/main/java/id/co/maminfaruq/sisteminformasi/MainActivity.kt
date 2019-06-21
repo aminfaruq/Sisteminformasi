@@ -3,6 +3,8 @@ package id.co.maminfaruq.sisteminformasi
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
+import id.co.maminfaruq.sisteminformasi.ui.menu.MenuFragment
+import id.co.maminfaruq.sisteminformasi.ui.telp.TelpFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
